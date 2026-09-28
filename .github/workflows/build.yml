@@ -1,7 +1,5 @@
 name: Build Baliung
-on:
-  push:
-    branches: [ main ]
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -9,10 +7,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
         with:
-          java-version: '21'
           distribution: 'temurin'
-      - run: chmod +x gradlew
-      - run: ./gradlew build
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v3
+      - run: gradle build --no-daemon
       - uses: actions/upload-artifact@v4
         with:
           name: baliung-jar
