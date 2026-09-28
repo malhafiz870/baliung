@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.baliung.mod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "baliung.refmap.json",
+  "client": ["HeldItemRendererMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

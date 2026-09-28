@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "baliung",
+  "version": "1.0",
+  "name": "Baliung Spin",
+  "description": "BALIUNG F9 spin",
+  "authors": ["Baliung"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["com.baliung.mod.BaliungSpinMod"] },
+  "mixins": ["baliung.mixins.json"],
+  "depends": { "fabricloader": ">=0.14.0", "minecraft": "~1.21.1", "java": ">=21" }
+}
